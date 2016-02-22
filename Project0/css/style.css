@@ -1,0 +1,52 @@
+body {
+	margin: 0px;
+	min-height: 540px;	
+	background-color: lightgray;
+}
+
+h1 {
+	margin: 10px 0px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wrapper {
+	border: 3px groove white;
+	position: center;
+	max-width: 550px;
+	margin: 5px auto;
+	min-height: 500px;	
+	padding: 10px 20px;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.vk {
+	color: blue;
+}
+
+.img {
+	max-width: 300px;
+	margin: 0px auto;
+}
+
+img {
+	max-height: 150px;
+	max-width: 150px;
+	display: block;
+	margin: 0px auto;
+}
+
+.wrapper div {
+	margin-bottom: 20px;
+	border-bottom: 1px black solid;
+	padding: 8px;
+}
+
+.wrapper div:last-child {
+	border-bottom-width: 0px;
+}
