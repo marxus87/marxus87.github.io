@@ -439,3 +439,7 @@ footer p:last-child {
 	font-size: 10px;
 	color: rgb(125,70,65);
 }
+
+.shadow {
+	box-shadow: 2px 4px 4px 0px rgb(190,190,190);
+}
