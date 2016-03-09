@@ -19,6 +19,10 @@ header, .wrapper, footer {
 	margin: 0px auto;
 }
 
+.wrap-all {
+	min-height: 100%;
+}
+
 header {
 	width: 912px;
 }
@@ -82,11 +86,10 @@ header {
 }
 
 .login span a {
-
 	color: rgb(255,255,255);
 }
 
-.login span:nth-child(3) {
+.login .registration {
 	padding: 0px 12px 0px 4px;
 	border-left: 1px solid rgb(255,255,255);
 }
@@ -182,14 +185,20 @@ header p a {
 }
 
 .wrapper {
-	position: relative;
 	min-height: 100%;
+	position: relative;
 	width: 912px;
-	clear: both;
+}
+
+.search {
+	font-size: 0px;
+
 }
 
 .search form {
+	box-sizing: border-box;
 	margin: 12px 4px 15px;
+	margin: 12px 0.47% 15px;
 	display: inline-block;
 	height: 132px;
 	border: 1px solid rgb(180,180,180);
@@ -197,16 +206,20 @@ header p a {
 	background: rgb(255,255,255);
 }
 
-.search form:nth-child(1) {
-	width: 413px;
+.s1 {
+	width: 416px;
+	width: 46.01%;
 }
 
-.search form:nth-child(2) {
-	width: 191px;
+.s2 {
+	width: 194px;
+	width: 21.46%;
 }
 
-.search form:nth-child(3) {
-	width: 266px;
+.s3 {
+	width: 268px;
+	width: 29.64%;
+
 }
 
 .left-menu, .content, .right-menu {
@@ -230,7 +243,6 @@ header p a {
 	border: 1px solid rgb(145,150,155);
 	border-radius: 13px;
 	padding: 5px 0px 5px 28px;
-	vertical-align: middle;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: bolder;
@@ -397,8 +409,12 @@ header p a {
 	text-align: center;
 }
 
+.appendix {
+	padding-bottom: 99px;
+}
+
 footer {
-	margin: 0px auto;
+	margin: -99px auto 0px;
 	border: 1px solid rgb(35,45,65);
 	border-radius: 2px 2px 0px 0px;
 	width: 908px;
