@@ -1,0 +1,199 @@
+* {
+	margin: 0px;
+	border: none;
+	padding: 0px;
+	color: #fff;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background: rgb(249,249,249);
+}
+
+body {
+	background: url(../img/background.png) no-repeat;
+	background-position: top;
+}
+
+dt, dt h2, dd, dd h3 {
+	color: inherit;
+}
+/*BEM CSS START*/
+input {
+	width: 15px;
+	height: 15px;
+	color: yellow;
+	font: 15pt;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.read-more {
+	margin-top: 25px;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: -1px;
+}
+
+/*BEM CSS FINISH*/
+
+/*ATOMIC CSS START*/
+.inline {
+	display: inline-block;
+}
+
+.ucase {
+	text-transform: uppercase;
+}
+/*ATOMIC CSS FINISH*/
+
+
+.wrapper {
+	margin: 0px auto;
+	padding: 0px 8px 200px;
+	width: 960px;
+	min-height: 100%;
+}
+
+.menu li, .content li {
+	display: inline-block;
+}
+
+.logo {
+
+}
+
+.logo a:after {
+	display: inline-block;
+	content: "er";
+}
+
+.content {
+	position: relative;
+}
+
+.content li {
+	display: none;
+}
+
+.content .show {
+	display: inline-block;
+}
+
+.content li div {
+	display: inline-block;
+}
+
+
+
+
+forum rename>> block / block__black
+users >> block__users
+forum-form >> forum
+block__updates
+
+
+.support {
+	display: inline-block;
+	width: 320px;
+}
+
+/**/
+.forum {
+	float: left;
+	clear: right;
+	position: relative;
+}
+
+.forum form {
+	margin-top: 35px;/*Look margin(1) for .user:after*/
+	text-align: center;
+}
+
+.forum {
+	margin: 0px 20px;
+	padding: 20px 40px 35px;
+	width: 430px;
+	color: black;
+}
+
+.block img {
+	line-height: 50px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -60px;
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+}
+
+.block h2 {
+	display: inline-block;
+	letter-spacing: -2px;
+}
+
+.block__users {
+	background: white;
+}
+
+.block__updates {
+	
+	padding-bottom: 0px;
+}
+
+.block__users:after {
+	position: absolute;
+	content: "";
+	margin: 35px 0px 0px 325px;
+	border: 10px solid transparent;
+	border-top-color: white;
+	border-right-color: white;
+}
+
+.block__users h2:after {
+	display: inline-block;
+	content: "starts here";
+	margin-left: 5px;
+	color: red;
+}
+
+.block__users dd {
+	line-height: 25px;
+}
+
+.block__updates dd {
+	margin: 20px 0px 0px 60px;
+	height: 50px;
+	line-height: 25px;
+}
+
+.block__updates img {
+	background-image: url(../img/comment-icon.png);
+}
+
+.comment-icon1 {
+	background-position: 0px -50px;
+}
+
+.comment-icon2 {
+	background-position: -60px -50px;
+}
+
+.comment-icon3 {
+	background-position: -120px -50px;
+}
+/**/
+
+footer {
+	margin: -200px auto 0px;
+	padding: 0px 8px;
+	width: 960px;
+	height: 200px;
+	background: blue;
+}
+
