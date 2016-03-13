@@ -7,7 +7,6 @@
 	list-style: none;
 	box-sizing: border-box;
 	font-family: Antonio;
-	font-weight: 100;
 }
 
 @font-face {
@@ -15,6 +14,10 @@
 	src: url('../fonts/Antonio-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
+}
+
+a:hover {
+	transition: background-color 0.3s;
 }
 
 .media {
@@ -27,7 +30,7 @@ body, html {
 }
 
 body {
-	background:  url(../img/background.png) no-repeat 100%, linear-gradient(to bottom, rgb(160,130,160) 900px, rgb(249,249,249) 901px);
+	background: url(../img/background.png) no-repeat 100%, linear-gradient(to bottom, rgb(160,130,160) 900px, rgb(249,249,249) 901px);
 	background-position: top;
 	background-size: auto;
 	overflow: visible;
@@ -62,7 +65,6 @@ dd {
 
 .inline {
 	display: inline-block;
-
 }
 
 .ucase {
@@ -776,6 +778,27 @@ footer:after {
 		margin-left: 40px;
 	}
 
+	.contact:before {
+		content: url(../img/shine.png);
+		display: block;
+		position: absolute;
+		margin: -17px 0px 0px 225px;
+		font-weight: bold;
+	}
+
+	.filler div, .filler div:last-child {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+		height: auto;
+	}
+
+	.filler .contact {
+		background: url(../img/text-shadow.png) no-repeat 100%;
+		background-position: 150px 19px;
+		letter-spacing: 0px;
+	}
+
 	.menu__footer {
 		display: block;
 		position: relative;
@@ -784,13 +807,6 @@ footer:after {
 		line-height: 16px;
 		letter-spacing: -1px;
 		font-size: 16pt;
-	}
-
-	.filler div, .filler div:last-child {
-		display: block;
-		margin-bottom: 30px;
-		width: 100%;
-		height: auto;
 	}
 
 	footer .menu {
