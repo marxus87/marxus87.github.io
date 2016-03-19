@@ -56,6 +56,8 @@ var method = {
 				pageBuilder = document.querySelectorAll('label');
 				element = document.createElement('input');
 				element.setAttribute('type', 'checkbox');
+				element.setAttribute('name', 'choice'+ ++i);
+				i = --i;
 				pageBuilder[i + j + y].appendChild(element);
 				console.log(element);
 				element = document.createElement('span');
