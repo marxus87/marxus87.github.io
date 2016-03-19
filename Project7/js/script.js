@@ -1,15 +1,15 @@
 var data = {
 	pageTitle: 'Тест по программированию',
 	ulQuestions: [
-		'Вопрос 1', {ulAnswers: [
+		'1. Вопрос 1', {ulAnswers: [
 						'Вариант ответа 1', 
 						'Вариант ответа 2',
 						'Вариант ответа 3']},
-		'Вопрос 2', {ulAnswers: [
+		'2. Вопрос 2', {ulAnswers: [
 						'Вариант ответа 1', 
 						'Вариант ответа 2',
 						'Вариант ответа 3']},
-		'Вопрос 3', {ulAnswers: [
+		'3. Вопрос 3', {ulAnswers: [
 						'Вариант ответа 1', 
 						'Вариант ответа 2',
 						'Вариант ответа 3']}
@@ -34,7 +34,7 @@ var method = {
 		var pageBuilder = document.querySelectorAll('.wrapper');
 		var element = document.createElement('form');
 		pageBuilder[0].appendChild(element);
-		for (var i=0; i<3; i++) {
+		for (var i=0; i<data.ulQuestions.length / 2; i++) {
 			var pageBuilder = document.querySelectorAll('form');
 			var element = document.createElement('h2');
 			element.classList.add('question');
@@ -43,7 +43,7 @@ var method = {
 			pageBuilder[0].appendChild(element);
 			element = document.createElement('ul');
 			pageBuilder[0].appendChild(element);
-			for (var y=0; y<3; y++) {
+			for (var y=0; y<data.ulQuestions[1].ulAnswers.length; y++) {
 				var pageBuilder = document.querySelectorAll('ul');
 				var element = document.createElement('li');
 				element.classList.add('answer');
@@ -59,7 +59,6 @@ var method = {
 				element.setAttribute('name', 'choice'+ ++i);
 				i = --i;
 				pageBuilder[i + j + y].appendChild(element);
-				console.log(element);
 				element = document.createElement('span');
 				element.innerHTML = data.ulQuestions[j + 1].ulAnswers[y];
 				pageBuilder[i + j + y].appendChild(element);				
@@ -69,12 +68,13 @@ var method = {
 	submitButton: function() {
 		var pageBuilder = document.querySelector('form');
 		var element = document.createElement('input');
-		element.innerHTML= data.inputSubmit;
+		element.setAttribute('value', data.inputSubmit);
 		element.setAttribute('type', 'submit');
 		pageBuilder.appendChild(element);
-	}
+	},
+	pageInit: function() {method.wrapper(),
+method.list(),
+method.submitButton()}
 };
 
-method.wrapper();
-method.list();
-method.submitButton();
+method.pageInit();
