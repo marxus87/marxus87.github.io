@@ -18,9 +18,6 @@ var switcher=1,
 	timeInit=0,
 	timeNew=0,
 	timePause=0,
-	timeSplit=0,
-	timeMemory=0,
-	timeLine=0,
 	timeTotal=0;
 
 function startTimer() {
@@ -95,10 +92,6 @@ function SPLIT (){
 	elementHTML=document.querySelector('.split-box');
 	elementNEW=document.createElement('li');
 	elementNEW.classList.add('split-line');
-	if (switcher==0) {
-		timeMemory=new Date();
-		timeLine=timeMemory.getTime()-timeInit.getTime();
-	}
 	elementNEW.innerHTML=time[0]+' : '+time[1]+' : '+time[2]+' : '+time[3];
 	elementHTML.appendChild(elementNEW);
 }
@@ -107,17 +100,14 @@ function RESET (){
 	min=0;
 	sec=0;
 	mss=0;
+	for (i=0; i<=2; i++) {time[i]='00';};
+	time[3]='000';
 	elementH.innerHTML='00';
 	elementM.innerHTML='00';
 	elementS.innerHTML='00';
 	elementMS.innerHTML='000';
-	timeInit=new Date();
-	timeNew=new Date();
-	timePause=0;
 	timeTotal=0;
 	switcher=1;
-	timeMemory=0;
-	timeLine=0;
 	elementStart.innerHTML='start';
 	elementHTML=document.querySelector('.split-box');
 	elementNEW=document.querySelectorAll('.split-line');
