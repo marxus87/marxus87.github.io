@@ -433,13 +433,18 @@ input[type="checkbox"]:checked + label:before {
     left: -100%;
     display: inline-block;
     border-radius: 4px;
-    background: pink;
     height: 100%;
     font-size: 100%;
-    overflow: hidden;
     transition: all 0.5s linear;
 }
 
-label:hover .hidden, input[type="checkbox"]:checked +label .hidden {
+/*label:hover .hidden, input[type="checkbox"]:checked +label .hidden*/
+
+label:hover + .top .hidden,
+input[type="checkbox"]:checked + label + .top .hidden {
     left: 0px;
+}
+
+input[type="checkbox"]:checked + label + .top {
+    overflow: visible;
 }
