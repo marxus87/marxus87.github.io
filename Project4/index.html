@@ -3,22 +3,22 @@
 <head>
 	<title>Zazor - несе вдаличинь</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.tmp.css">
 </head>
 <body>
-	<div class="wrap-all">
-		<header>
-			
+	<div class="wrapper">
+		<div class="header">
 			<div class="contact">
-				<span><a href="tel:+380441234567">(044)123-45-67</a></span>
-				<span><a href="tel:+380445678910">(044)567-89-10</a></span>
+				<a href="tel:+380441234567"><span>(044)123-45-67</span></a>
+				<a href="tel:+380445678910"><span>(044)567-89-10</span></a>
 				<div class="login shadow">
 					<form>
 						<input type="text" placeholder="логін">
-						<input type="password" placeholder="пароль">
+						<input type="text" placeholder="пароль">
 					</form>
-					<span><a href="#">вхід</a></span><span class="registration"><a href="#">реєстрація</a></span>
-					<span><a href="#">забули пароль?</a></span>
+					<a href="#"><span>вхід</span></a>
+					<a href="#"><span class="registration">реєстрація</span></a>
+					<a href="#"><span>забули пароль?</span></a>
 				</div>
 				<div class="contact-icons">
 					<a href="#"><img src="img/home.jpg"></a>
@@ -29,22 +29,22 @@
 			<div class="logo-img"><img src="img/logo.jpg"></div>
 			<div class="cart shadow">	
 				<ul>
-					<li>Про компанію</li>
-					<li>Оплата</li>
-					<li>Доставка</li>
-					<li>Статті</li>
-					<li>Контакти</li>
+					<li><a href="#">Про компанію</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Статті</a></li>
+					<li><a href="#">Контакти</a></li>
+					<li><a href="#"><span class="goods">товарів:</span><span>0</span></a><a href="#"><span class="costs">на суму:</span><span>0,00 грн.</span></a></li>
 				</ul>
-				<p><a class="goods" href="#"><span>товарів:</span></a><a class="costs" href="#"><span>на суму:</span></a></p>
 			</div>
-		</header>
-		<div class="wrapper">
+		</div>
+		<div class="content-box">
 			<div class="search">
 				<form class="s1 shadow"></form>
 				<form class="s2 shadow"></form>
 				<form class="s3 shadow"></form>
 			</div>
-			<aside class="left-menu">
+			<div class="aside left-menu">
 				<p class="shadow">Каталог продукції:</p>
 				<ul><p>Шини</p>
 					<li><a href="#">Найменування 1</a></li>
@@ -64,87 +64,97 @@
 					<li><a href="#">Найменування 3</a></li>
 					<li><a href="#">Найменування 4</a></li>
 				</ul>
-			</aside>
-			<div class="content">
-				<ul>
-					<li><a href="">
-						<p>Goodyear<br>
-						Ultra Grip Extreme</p>
-						<div class="tyre1"></div>
-						<p class="price">90.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Nokian<br>
-						Hakkapeliitta R</p>
-						<div class="tyre2"></div>
-						<p class="price">115.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Hankook<br>
-						K 708 155/65 R14</p>
-						<div class="tyre3"></div>
-						<p class="price">393.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Goodyear<br>
-						Ultra Grip Extreme</p>
-						<div class="tyre1"></div>
-						<p class="price">90.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Nokian<br>
-						Hakkapeliitta R</p>
-						<div class="tyre2"></div>
-						<p class="price">115.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Hankook<br>
-						K 708 155/65 R14</p>
-						<div class="tyre3"></div>
-						<p class="price">393.00 грн.</p></a>
-					</li>				<li><a href="">
-						<p>Goodyear<br>
-						Ultra Grip Extreme</p>
-						<div class="tyre1"></div>
-						<p class="price">90.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Nokian<br>
-						Hakkapeliitta R</p>
-						<div class="tyre2"></div>
-						<p class="price">115.00 грн.</p></a>
-					</li>
-					<li><a href="">
-						<p>Hankook<br>
-						K 708 155/65 R14</p>
-						<div class="tyre3"></div>
-						<p class="price">393.00 грн.</p></a>
-					</li>
-				</ul>
 			</div>
-			<aside class="right-menu">
+			<div class="aside right-menu">
 				<p class="shadow">Бренди:</p>
-				<form><p>Шини</p>
+				<form>
+					<p>Шини</p>
 					<label><input type="checkbox">Бренд 1</label>
 					<label><input type="checkbox">Бренд 2</label>
 					<label><input type="checkbox">Бренд 3</label>
-				</form>
-				<form><p>Диски</p>
+					<p>Диски</p>
 					<label><input type="checkbox">Бренд 1</label>
 					<label><input type="checkbox">Бренд 2</label>
 					<label><input type="checkbox">Бренд 3</label>
 					<button class="shadow">Вибрати</button>
 				</form>
-			</aside>
-			<div class="bottom"><img src="img/footer.jpg"></div>
+			</div>
+			<div class="content">
+				<div><a href="#">
+					<span>Goodyear</span>
+					<span>Ultra Grip Extreme</span>
+					<span class="tyre"><img src="img/tyre1.jpg"></span>
+					<span class="price">90.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Nokian</span>
+					<span>Hakkapeliitta R</span>
+					<span class="tyre"><img src="img/tyre2.jpg"></span>
+					<span class="price">115.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Hankook</span>
+					<span>K 708 155/65 R14</span>
+					<span class="tyre"><img src="img/tyre3.jpg"></span>
+					<span class="price">393.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Goodyear</span>
+					<span>Ultra Grip Extreme</span>
+					<span class="tyre"><img src="img/tyre1.jpg"></span>
+					<span class="price">90.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Nokian</span>
+					<span>Hakkapeliitta R</span>
+					<span class="tyre"><img src="img/tyre2.jpg"></span>
+					<span class="price">115.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Hankook</span>
+					<span>K 708 155/65 R14</span>
+					<span class="tyre"><img src="img/tyre3.jpg"></span>
+					<span class="price">393.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Goodyear</span>
+					<span>Ultra Grip Extreme</span>
+					<span class="tyre"><img src="img/tyre1.jpg"></span>
+					<span class="price">90.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Nokian</span>
+					<span>Hakkapeliitta R</span>
+					<span class="tyre"><img src="img/tyre2.jpg"></span>
+					<span class="price">115.00 грн.</span></a>
+				</div>
+				<div><a href="#">
+					<span>Hankook</span>
+					<span>K 708 155/65 R14</span>
+					<span class="tyre"><img src="img/tyre3.jpg"></span>
+					<span class="price">393.00 грн.</span></a>
+				</div>
+			</div>
+			<ul class="bottom">
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+				<li><a></a></li>
+			</ul>
 		</div>
-		<div class="appendix"></div>
 	</div>
-	<footer>
-		<p>
-			<span><a href="#">Про компанію</a></span><span><a href="#">Доставка</a></span><span><a href="#">Статті</a></span><span><a href="#">Контакти</a></span>
-		</p>
-		<p>Створення сайту &copy; Global Vision</p>
-	</footer>
+	<div class="footer">
+		<ul>
+			<li><a href="#">Про компанію</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статті</a></li>
+			<li><a href="#">Контакти</a></li>
+		</ul>
+		<span>Створення сайту &copy; Global Vision</span>
+	</div>
 </body>
 </html>
