@@ -1,0 +1,15 @@
+* {
+	margin: 0px auto;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type]:last-child {
+	display: block;
+	text-align: center;
+	padding: 5px;
+}
