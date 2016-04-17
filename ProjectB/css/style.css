@@ -48,6 +48,14 @@
 	cursor: pointer;
 }
 
+.hider p {
+	text-align: center;
+}
+
+img {
+	cursor: url("../img/cursor.png"), auto;
+}
+
 .wrapper {
 	box-sizing: border-box;
 	margin: 0px auto;
