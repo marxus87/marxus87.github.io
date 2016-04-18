@@ -1,9 +1,7 @@
 * {
-	margin: 0px auto;
-	padding: 0px;
-	font-family: arial;
+	margin: 0 auto;
+	padding: 0;
 	text-decoration: none;
-	color: black;
 	list-style: none;
 }
 
@@ -11,39 +9,42 @@ html, body {
 	height: 100%;
 }
 
+body {
+	font-family: arial;
+	color: black;
+}
+
 img {
-	position: relative;
-	top: 0px;
 	display: block;
 }
 
-a {
+a, input[type="submit"] {
 	cursor: pointer;
 }
 
 div {
 	box-sizing: border-box;
-	width: 100%;
 }
 
 .wrapper {
+	max-width: 912px;
 	min-height: 100%;
 	padding-bottom: 100px;
-	width: 912px;
 }
 
 .contact {
-	margin: 0px 8px 4px;
-	padding-left: 25px;
+	margin: 0 8px 4px;
+	padding: 20px 0 0 25px;
 	background: url('../img/phone-icon.jpg') no-repeat;
-	background-position: 0px 21px;
+	background-position: bottom left;
 	background-size: 22px 21px;
 }
 
 .contact > a > span {
+	vertical-align: middle;
 	color: rgb(135,140,145);
 	font-size: 18px;
-	letter-spacing: 0.5pt;
+	letter-spacing: 0;
 }
 
 .contact div, .contact form, .cart ul, .cart p, .cart ul li, .footer ul {
@@ -51,12 +52,10 @@ div {
 }
 
 .login {
-	position: relative;
-	top: -3px;
-	margin: 20px 0px 0px 12px;
+	vertical-align: middle;
+	margin-left: 10px;
 	border-radius: 4px;
 	padding: 3px;
-	width: auto;
 	background: linear-gradient(to bottom, rgb(31,103,135),rgb(12,51,87));
 }
 
@@ -66,45 +65,48 @@ div {
 	padding-left: 20px;
 }
 
-.login input {
-	position: relative;
-	top: -3px;
-	margin: 0px 1px;
+.login input[type="text"] {
+	vertical-align: middle;
+	margin: 0 1px;
 	border: 1px solid rgb(50,150,180);
 	border-radius: 2px;
-	padding: 0px 0px 2px 5px;
+	padding: 0 0 2px 5px;
 	width: 108px;
 	font-size: 11px;
-	letter-spacing: 0.5pt;
+	letter-spacing: 0;
 }
 
 .login span {
-	position: relative;
 	color: rgb(255,255,255);
-	top: -2px;
-	padding: 0px 2px 0px 1px;
-	font-size: 11px;
-	letter-spacing: 0.5pt;
 }
 
 .login .registration {
-	padding: 0px 6px 0px 6px;
+	padding: 0 6px 0;
 	border-left: 1px solid rgb(255,255,255);
 }
 
-.login a:last-child span {
+.login a:last-child input[type="submit"] {
 	margin-left: 21px;
 	color: rgb(145,150,155);
 	text-decoration: underline;
 }
 
+input[type=submit] {
+	border: 0px;
+	padding: 0 2px 0 1px;
+	background: transparent;
+	font-size: 11px;
+	color: white;
+	letter-spacing: 0;
+}
+
 .contact-icons {
 	position: relative;
 	top: -4px;
-	margin: 0px 5px 0px 13px;
+	margin: 0 5px 0 13px;
 	border: 1px solid rgb(190,195,200);
 	border-radius: 10px;
-	padding: 0px 8px;
+	padding: 0 8px;
 	width: auto;
 }
 
@@ -122,11 +124,11 @@ div {
 }
 
 .cart li {
-	margin: 3px 0px 3px -4px;
+	margin: 3px 0 3px -4px;
 	border-radius: 13px;
 	padding: 5px 16px;
 	font-size: 14px;
-	letter-spacing: -0.2pt;
+	letter-spacing: 0;
 	cursor: pointer;
 }
 
@@ -147,14 +149,14 @@ div {
 .cart li:last-child a {
 	text-transform: none;
 	font-size: 11px;
-	letter-spacing: 0.3pt;
+	letter-spacing: 0;
 	color: rgb(255,255,255);
 }
 
 .goods, .costs {
 	position: relative;
 	top: -1px;
-	padding: 0px 5px 0px 15px;
+	padding: 0 5px 0 15px;
 	font-size: 11px;
 	color: rgb(255,255,255);
 }
@@ -165,7 +167,7 @@ div {
 }
 
 .search {
-	font-size: 0px;
+	font-size: 0;
 }
 
 .search form {
@@ -179,18 +181,15 @@ div {
 	background: rgb(255,255,255);
 }
 
-.s1 {
-	width: 416px;
+.search1 {
 	width: 46.01%;
 }
 
-.s2 {
-	width: 194px;
+.search2 {
 	width: 21.46%;
 }
 
-.s3 {
-	width: 268px;
+.search3 {
 	width: 29.64%;
 }
 
@@ -201,7 +200,7 @@ div {
 .aside p {
 	border: 1px solid rgb(145,150,155);
 	border-radius: 13px;
-	padding: 5px 0px 5px 28px;
+	padding: 5px 0 5px 28px;
 	font-size: 12px;
 	color: rgb(25,70,100);
 	font-weight: bolder;
@@ -234,12 +233,12 @@ div {
 
 .left-menu ul p {
 	width: 120px;
-	margin-left: 0px;
+	margin-left: 0;
 	background-position: 2px;
 }
 
 .left-menu li {
-	margin: 0px 0px 6px 35px;
+	margin: 0 0 6px 35px;
 	padding-left: 11px;
 	background: url(../img/round-icon.jpg) no-repeat;
 	background-size: 6px;
@@ -247,8 +246,8 @@ div {
 }
 
 .left-menu a {
-	font-size: 9pt;
-	letter-spacing: 0.5pt;
+	font-size: 12px;
+	letter-spacing: 0;
 	color: rgb(55,50,75);
 }
 
@@ -280,9 +279,9 @@ div {
 }
 
 .right-menu label {
-	margin: 2px 0px 10px 0px;
+	margin: 2px 0 10px 0;
 	display: block;
-	font-size: 9pt;
+	font-size: 12px;
 	color: rgb(55,50,75);
 	cursor: pointer;
 }
@@ -290,7 +289,7 @@ div {
 .right-menu input {
 	position: relative;
 	top: 3px;
-	margin: 0px 15px 0px 10px;
+	margin: 0 15px 0 10px;
 	height: 10px;
 	border-color: rgb(30,100,130);
 	cursor: pointer;
@@ -298,7 +297,7 @@ div {
 
 .right-menu button {
 	margin: 10px 10px;
-	border: 0px;
+	border: 0;
 	border-radius: 15px;
 	height: 26px;
 	width: 82px;
@@ -312,28 +311,29 @@ div {
 .content {
 	float: left;
 	margin-bottom: 27px;
+	padding: 0 10px 0;
 	width: 526px;
 	background: linear-gradient(to bottom, rgb(230,230,230), rgb(145,165,175));
 }
 
-.content div {
+.item {
 	width: auto;
 	display: inline-block;
-	margin: 13px 0px 12px 26px;
+	margin: 13px;
 	text-align: center;
 }
-.content span {
+.item span {
+	font-size: 14px;
 	display: block;
 	font-weight: bolder;
-	font-size: 14px;
 }
 
-.content span:nth-child(1) {
+.name {
 	font-size: 16px;
 	color: rgb(25,70,100);
 }
 
-.content span:nth-child(3) {
+.tyre {
 	width: 138px;
 	height: 128px;
 	border: 1px solid rgb(175,180,190);
@@ -341,7 +341,7 @@ div {
 	background: rgb(255,255,255);
 }
 
-.content img {
+.tyre img {
 	margin-top: 6px;
 	display: inline;
 	line-height: 100%;
@@ -357,48 +357,15 @@ div {
 .bottom {
 	clear: left;
 	box-sizing: border-box;
-	margin: 0px auto 13px;
-	padding: 0px 8px 0px;
+	margin: 0 auto 13px;
+	padding: 0 8px 0;
 	width: 700px;
 	height: 50px;
-	background: url('../img/footer.jpg') no-repeat;
 }
 
 .bottom li {
 	display: inline-block;
-	margin: 0px 3px -4px;
-}
-
-.bottom li:nth-child(1) {
-	width: 85px;
-}
-
-.bottom li:nth-child(2) {
-	width: 100px;
-}
-
-.bottom li:nth-child(3) {
-	width: 80px;
-}
-
-.bottom li:nth-child(4) {
-	width: 63px;
-}
-
-.bottom li:nth-child(5) {
-	width: 77px;
-}
-
-.bottom li:nth-child(6) {
-	width: 61px;
-}
-
-.bottom li:nth-child(7) {
-	width: 65px;
-}
-
-.bottom li:nth-child(8) {
-	width: 75px;
+	margin: 0 -3px -4px;
 }
 
 .bottom a {
@@ -410,8 +377,7 @@ div {
 .footer {
 	margin-top: -100px;
 	border: 1px solid rgb(35,45,65);
-	border-radius: 2px 2px 0px 0px;
-	width: 908px;
+	border-radius: 2px 2px 0 0;
 	height: 100px;
 	background: rgb(30,60,80);
 	text-align: center;
@@ -426,12 +392,12 @@ div {
 .footer li {
 	display: inline-block;
 	height: 12px;
-	padding: 0px 8px;
+	padding: 0 8px;
 	border-right: 1px solid rgb(255,255,255);
 }
 
 .footer li:last-child {
-	border-right: 0px;
+	border-right: 0;
 }
 
 .footer a {
@@ -452,5 +418,5 @@ div {
 }
 
 .shadow {
-	box-shadow: 2px 4px 4px 0px rgb(190,190,190);
+	box-shadow: 2px 4px 4px 0 rgb(190,190,190);
 }
