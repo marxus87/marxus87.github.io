@@ -33,11 +33,15 @@ div {
 }
 
 .contact {
-	margin: 0 8px 4px;
+	margin: 0 8px 10px;
 	padding: 20px 0 0 25px;
 	background: url('../img/phone-icon.jpg') no-repeat;
 	background-position: bottom left;
 	background-size: 22px 21px;
+}
+
+.contact > a {
+	vertical-align: middle;
 }
 
 .contact > a > span {
@@ -66,7 +70,7 @@ div {
 }
 
 .login input[type="text"] {
-	vertical-align: middle;
+	vertical-align: text-bottom;
 	margin: 0 1px;
 	border: 1px solid rgb(50,150,180);
 	border-radius: 2px;
@@ -85,13 +89,15 @@ div {
 	border-left: 1px solid rgb(255,255,255);
 }
 
-.login a:last-child input[type="submit"] {
+.login  input[type="submit"]:last-child {
 	margin-left: 21px;
 	color: rgb(145,150,155);
 	text-decoration: underline;
 }
 
 input[type=submit] {
+	vertical-align: text-bottom;
+    height: 16px;
 	border: 0px;
 	padding: 0 2px 0 1px;
 	background: transparent;
@@ -101,6 +107,7 @@ input[type=submit] {
 }
 
 .contact-icons {
+	vertical-align: bottom;
 	position: relative;
 	top: -4px;
 	margin: 0 5px 0 13px;
