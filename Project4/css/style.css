@@ -318,7 +318,7 @@ input[type=submit] {
 .content {
 	float: left;
 	margin-bottom: 27px;
-	padding: 0 10px 0;
+	padding: 0 9px 0;
 	width: 526px;
 	background: linear-gradient(to bottom, rgb(230,230,230), rgb(145,165,175));
 }
@@ -337,7 +337,11 @@ input[type=submit] {
 
 .name {
 	font-size: 16px;
-	color: rgb(25,70,100);
+	color: rgb(50,125,175);
+}
+
+.name__blue {
+	color: rgb(80,85,100);
 }
 
 .tyre {
@@ -358,7 +362,7 @@ input[type=submit] {
 	font-size: 17px;
 	font-weight: bold;
 	font-style: italic;
-	color: rgb(25,70,100);	
+	color: rgb(50,60,120);	
 }
 
 .bottom {
