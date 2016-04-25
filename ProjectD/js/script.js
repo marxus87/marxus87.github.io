@@ -26,9 +26,10 @@ function GoogleCallback(jqueryObj, data) {
 $('#button').click(getText);
 
 
-$('#button').keyup(function(e){
-	if (e.which == 13) {
-		$('#button').click();
+$('#search').keydown(function(e){
+	if (e.which === 13) {
+		e.preventDefault();
 		console.log(e.keyCode);
+		$('#button').click();
 	};
 });
