@@ -47,7 +47,12 @@ input[type=text]{
 .search{
 	width: 90%;
 	margin: 10px auto;
+	overflow: hidden;
 }
 .search a{
 	display: block;
+	color: blue;
+}
+.search a:hover{
+	text-decoration: underline;
 }
