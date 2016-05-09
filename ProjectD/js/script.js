@@ -47,7 +47,6 @@ var sts = {
 	Cmp: 'NoCompany',
 	Slr: 0
 };
-
 Human = function(Name,Age,Sex,Height,Weight){
 	// "use strict";
 	this.Name = Name||sts.Nme;
@@ -72,7 +71,7 @@ Worker = function(Company,Salary,x3){
 
 	};
 };
-var Human1 = new Human('Nick', 20, 'M', 179);
+var Human1 = new Human('Nick', 20, undefined, 179);
 Human1.prototype = new Student('Oxford', 800);
 var Human2 = new Human('Charles', 23, 'M', undefined, 55);
 Human2.prototype = new Worker(undefined, 500);
