@@ -29,13 +29,17 @@ body {
 .bottom a:hover {
 	text-decoration: underline;
 }
+input[type="radio"]:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
 .menu a, .content a, .description h1, .description span, .support h2, .support p, .read-more a, .bottom span, .bottom a {
 	color: #fff;
 }
 .description h2, .block__users a {
 	color: rgb(240,190,255);
 }
-.filler h2, .block div, .read-more__black a {
+.filler h2, .textblock, .read-more__black a {
 	color: rgb(70,70,70);
 }
 .filler p {
@@ -238,7 +242,7 @@ body {
 .forum__updates {
 	padding-right: 0px;
 }
-.block__updates div {
+.block__updates .textblock {
 	margin: 10px auto;
 	padding-left: 60px;
 }
@@ -255,7 +259,7 @@ body {
 	bottom: -70px;
 	left: 41%;
 }
-.block div {
+.textblock {
 	position: relative;
 	display: inline-block;
 }
@@ -320,12 +324,12 @@ body {
 	height: 200px;
 	overflow: hidden;
 }
-.filler div {
+.filler .textblock {
 	margin-right: 60px;
 	width: 28%;
 	vertical-align: top;
 }
-.filler div:last-child {
+.filler .textblock:last-child {
 	margin-right: 0;
 }
 .filler img {
@@ -451,14 +455,14 @@ body {
 		margin-top: -600px;
 		height: 600px;
 	}
-	.filler div {
+	.filler .textblock {
 		width: 27%;
 	}
 	.bottom {
 		height: 200px;
 		background-size: 100% 100%;
 	}
-	.bottom div {
+	.bottom .media {
 		text-align: right;
 	}
 	.menu__footer {
@@ -599,6 +603,7 @@ body {
 	}
 	.support {
 		display: inline-block;
+		margin-right: 0;
 		margin-bottom: 25px;
 		width: 100%;
 	}
@@ -643,7 +648,7 @@ body {
 		height: auto;
 		overflow: visible;
 	}
-	.filler div {
+	.filler .textblock {
 		display: block;
 		margin-bottom: 60px;
 		padding-top: 5px;
@@ -655,7 +660,7 @@ body {
 		height: 200px;
 		background-size: 100% 100%;
 	}
-	.bottom div {
+	.bottom .media {
 		text-align: center;
 	}
 	.menu__footer {
@@ -769,7 +774,7 @@ body {
 	.forum__updates {
 		padding-top: 90px;
 	}
-	.block__updates div {
+	.block__updates .textblock {
 		height: 50px;
 		overflow: hidden;
 	}
@@ -789,7 +794,7 @@ body {
 		height: 200px;
 		background-size: 100% 100%;
 	}
-	.bottom div {
+	.bottom .media {
 		padding: 40px 0 140px;
 		height: 20px;
 		text-align: center;
