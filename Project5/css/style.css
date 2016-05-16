@@ -131,10 +131,10 @@ input[type="radio"]:hover {
 	font-weight: 900;
 }
 .nav-left {
-	left: -15%;
+	left: -25px;
 }
 .nav-right {
-	right: -15%;
+	right: -25px;
 }
 .content {
 	position: relative;
@@ -361,7 +361,7 @@ input[type="radio"]:hover {
 	font-family: lucida;
 	font-weight: bold;
 } /*79 x spaces || 465 vs 428*/ 
-@media all and (min-width: 768px) and (max-width: 960px) {
+@media all and (min-width: 820px) and (max-width: 1030px) {
 	.media {
 		width: 728px;
 	}
@@ -469,7 +469,7 @@ input[type="radio"]:hover {
 		padding: 40px 0;
 	}
 }/*31 x space 120 || 138(566)*/
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (min-width: 490px) and (max-width: 819px) {
 	.media {
 		width: 430px;
 	}
@@ -674,7 +674,7 @@ input[type="radio"]:hover {
 		margin-right: 0;
 	}/* 45 x space - 856 || 806*/
 }
-@media all and (min-width: 100px) and (max-width: 480px) {
+@media all and (min-width: 100px) and (max-width: 489px) {
 	.menu li + li, .menu__footer, .description span, .description-photo, .filler {
 		display: none;
 	}
