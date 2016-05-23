@@ -276,19 +276,21 @@ h2 {
 }
 .banners a span:first-child {
     border-right: 1px solid rgb(230,230,230);
-    padding-left: 1em;
     width: $slide;
+    text-align: center;
+    font-size: 20px;
 }
-.banners a span {
+.banners a span:last-child {
     border-left: 1px solid rgb(230,230,230);
     padding-left: 1em;
+    font-weight: bold;
 }
 .banners a:active, .active a {
     background: $menu-color;
     border-top: 0;
     border-bottom: 0;
 }
-.banners a:active span, .active a span {
+.banners a:active span, .banners .active a span {
     border: 1px solid transparent;
 }
 .banners a:active span:first-child, .active a span:first-child {
@@ -302,8 +304,6 @@ h2 {
     position: absolute;
     top: $image-date-top;
     left: $image-date-left;
-}
-.content-bottom img:first-child {
 }
 .sponsors li {
     padding: $sponsors-vertical $sponsors-horizontal;
