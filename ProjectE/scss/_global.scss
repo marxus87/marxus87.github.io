@@ -5,7 +5,7 @@
 }
 body {
     min-width: 320px;
-    font: normal #{$fontSize-small}/#{$lineHeight-base} $font-base;
+    font: normal #{$fontSize-smallest}/#{$lineHeight-base} $font-base;
     color: $black;
 }
 a {
@@ -24,7 +24,7 @@ ul {
     list-style: none;
 }
 h2 {
-    font-size: 20px;
+    font-size: 17px;
 }
 .wrapper {
     min-height: 100%;
@@ -38,8 +38,11 @@ h2 {
 .textblock, .comments, .footer>div>p a, .footer ul ul a {
     color: $color-gray;
 }
-.menu a, .content-middle h1, .content-middle li a span, .content-middle h2, .banners a:active span, .footer>div>ul p {
+.menu a, .content-middle h1, .content-middle li a span, .content-middle h2, .banners a:active span, .footer h2 {
     color: #fff;
+}
+.menu a, h2, .number-text a, .footer li a, .footer p {
+    font-weight: bolder;
 }
 .preheader {
     position: relative;
@@ -295,12 +298,6 @@ h2 {
     display: none;
     padding-left: $slide;
 }
-/*.active {
-    display: block;
-}*/
-/*.active a {
-    display: inline-block;
-}*/
 .content-bottom img:last-child {
     position: absolute;
     top: $image-date-top;
@@ -317,7 +314,7 @@ h2 {
 .footer {
     background: $menu-bgcolor;
 }
-.footer ul p {
+.footer h2 {
     text-transform: uppercase;
     padding-bottom: 40px;
 }
@@ -339,18 +336,18 @@ h2 {
 .footer>div:last-child {
     background: $search-color;
 }
-.footer>div>p {
+.footer p {
     position: relative;
     line-height: 60px;
 }
-.footer>div>p a {
+.footer p a {
     margin-right: 20px;
 }
-.footer>div>p a:last-child {
+.footer p a:last-child {
     position: absolute;
     right: 0;
     margin-right: 0;
 }
-.footer>div>p img {
+.footer p img {
     vertical-align: middle;
 }
