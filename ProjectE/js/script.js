@@ -271,7 +271,6 @@ var objectJSON = [{
     "longitude": 37.385548,
     "_id": "56bdc3396fdbaec5ee4ca929"
   }];
-// 3. Массив всех друзей всех пользователей, не должно быть повторяющихся людей
 var stringJSON = JSON.stringify(objectJSON);
 objectJSON = JSON.parse(stringJSON);
 var skills = [];
@@ -289,8 +288,6 @@ for (i=0; i<objectJSON.length; i++) {
 }
 names.names = _.map(objectJSON, 'name');
 names.friends = _.map(objectJSON, 'friends');
-
-  // names[i].names = temp.names[i];
 names = _.sortBy(names, ['friends', 'name']);
 names = _.map(names, 'name');
 console.log('The skills are ',skills.join(', ')+'.');
