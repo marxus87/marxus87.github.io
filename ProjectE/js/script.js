@@ -293,3 +293,36 @@ names = _.map(names, 'name');
 console.log('The skills are ',skills.join(', ')+'.');
 console.log('The people in the list are ',names.join(', ')+'.');
 console.log('Their friends are ',friends.join(', ')+'.');
+
+$(document).ready(function(){
+    var Height = document.querySelector('.footer').offsetHeight;
+    setHeight = 'padding-bottom:'+Height+'px';
+    document.querySelector('.wrapper').setAttribute('style',setHeight);
+    setHeight = 'margin-top:-'+Height+'px';
+    document.querySelector('.footer').setAttribute('style',setHeight);
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+    $(function() {
+      $('#b1').addClass('active');
+      $('.banners li:first-child').addClass('active');
+        $('.active .slidea span:first-child').html('-');
+      $('.active div').slideDown(100);
+    });
+    $(function() {
+        $('.slidea').on('click', function(event) {
+            var element = $(this).attr('href');
+            var $element = element+'';
+            $('.banners .textblock').slideUp(100);
+            $('.slidea span:first-child').html('+');
+            $($element).slideDown(100);
+            $(this).parent('li').addClass('active').siblings().removeClass('active');
+            $('.active .slidea span:first-child').html('-');
+            event.preventDefault();
+        });
+    });
