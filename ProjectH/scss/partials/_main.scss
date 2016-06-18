@@ -1,0 +1,112 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    min-width: 280px;
+    font: normal #{$fontSize-smallest}/#{$lineHeight-base} $font-base;
+    color: $black;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+}
+body * {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+input[type="submit"], .forum_step h4 span {
+    border: 2px solid transparent;
+    @include border-radius($cred-rad);
+    padding: 0;
+    background: transparent;
+    font-size: $fontSize-button;
+}
+input[type="submit"] {
+    height: $search-ht;
+}
+body .btn1, body .js-btn, .forum_step h4 span {
+    border: 2px solid $pink;
+    padding: $header-button-padding;
+    background: $pink;
+}
+body .btn1, body .js-btn {
+    padding: $header-button-padding;
+    color: $white;   
+}
+body .btn2 {
+    border: 2px solid $pink;
+    padding: $header-button-padding;
+    color: $pink;
+}
+input[type="submit"] {
+    @include transition(all 0.5s);
+}
+.login:hover {
+    color: $pink;
+}
+.signup:hover {
+    @include transition(all 0.5s);
+    border-color: $pink;
+    background: $pink;
+}
+.btn1:hover, .js-btn:hover {
+    @include transition(all 0.5s);
+    background: $white;
+    color: $pink;
+}
+.btn2:hover {
+    @include transition(all 0.5s);
+    background: $pink;
+    color: $white;
+}
+.wrapper a {
+    text-decoration: none;
+}
+.wrapper h2 {
+    font-family: $m-bold;
+    font-size: $fontSize-h2-w;
+    line-height: $forum-h2-ht;
+}
+.wrapper h3 {
+    font-family: $m-bold;
+    font-size: $fontSize-h3-w;
+    color: $gray;
+}
+.wrapper h4, .wrapper a h4 {
+    font-family: $m-bold;
+}
+.wrapper .media h3 {
+    text-align: center;
+}
+.wrapper .forum h4 span {
+    font-family: $m-normal;
+}
+.wrapper p {
+    font-family: $r-light;
+    color: $lightgray;
+}
+.wrapper a span {
+    font-family: $m-bold;
+}
+.footer h3, .footer h4, .footer h5 {
+    font-family: $m-bold;
+}
+.footer a {
+    font-family: $r-light;
+}
+.activity, .forum {
+    margin-bottom: -23px;
+    text-align: center;
+    font-size: 50px;
+}
+.activity_picture, .forum_step {
+    display: -webkit-inline-box;
+}
