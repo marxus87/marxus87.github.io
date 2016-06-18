@@ -105,8 +105,13 @@ input[type="submit"] {
 .activity, .forum {
     margin-bottom: -23px;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
 }
 .activity_picture, .forum_step {
     display: -webkit-inline-box;
+}
+@media only screen and (min-width: 945px) {
+    .activity, .forum {
+        text-align: justify;
+    }
 }
