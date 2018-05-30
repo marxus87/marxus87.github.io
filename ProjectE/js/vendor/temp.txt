@@ -1,3 +1,0 @@
-temp file for empty folders
-
-Paste all extend plugins in to this folder
