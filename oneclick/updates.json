@@ -8,5 +8,15 @@
         }
       ]
     }
+  },
+  "extensions": {
+    "{ckblaododeigghhmiilhjeebhipdhlgn}": {
+      "updates": [
+        {
+          "version": "1.0.31",
+          "update_link": "https://app.f1kit.icu/oneclick/updates/Oneclick_v.1.0.31.crx"
+        }
+      ]
+    }
   }
 }
