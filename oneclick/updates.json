@@ -1,6 +1,6 @@
 {
   "addons": {
-    "{c2524fd3-1f8e-40ea-a083-bb48cc6ace06}": {
+    "{e23d968c-2ba0-4ac7-9357-92251bc64555}": {
       "updates": [
         {
           "version": "1.0.31",
@@ -9,16 +9,24 @@
         {
           "version": "1.0.32",
           "update_link": "https://app.f1kit.icu/oneclick/updates/Oneclick_v.1.0.32.xpi"
+        },
+        {
+          "version": "1.1",
+          "update_link": "https://app.f1kit.icu/oneclick/updates/Oneclick_v.1.1.xpi"
         }
       ]
     }
   },
   "extensions": {
-    "{ckblaododeigghhmiilhjeebhipdhlgn}": {
+    "{ddedkcjgeggpengbcjlojkdigccgpeob}": {
       "updates": [
         {
           "version": "1.0.31",
           "update_link": "https://app.f1kit.icu/oneclick/updates/Oneclick_v.1.0.31.crx"
+        },
+        {
+          "version": "1.1",
+          "update_link": "https://app.f1kit.icu/oneclick/updates/Oneclick_v.1.1.crx"
         }
       ]
     }
